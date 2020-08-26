@@ -1,0 +1,43 @@
+package Phoebe;
+import org.junit.Assert;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.mockito.Mockito;
+
+public class MarsRoversTest {
+	
+	@Rule
+	public ExpectedException exceptionRule = ExpectedException.none();
+	
+	@Test
+	public void turnLeftTesting() {
+		MarsRovers marsRovers = new MarsRovers();
+		Rovers rover = new Rovers(1, 1, 'E');
+		marsRovers.turnLeft(rover);
+		Assert.assertEquals('N', rover.getDirection());
+		
+		rover = new Rovers(1, 1, 'S');
+		marsRovers.turnLeft(rover);
+		Assert.assertEquals('E', rover.getDirection());
+		
+		rover = new Rovers(1, 1, 'W');
+		marsRovers.turnLeft(rover);
+		Assert.assertEquals('S', rover.getDirection());
+		
+		rover = new Rovers(1, 1, 'N');
+		marsRovers.turnLeft(rover);
+		Assert.assertEquals('W', rover.getDirection());
+		
+		rover = new Rovers(1, 1, 'K');
+		marsRovers.turnLeft(rover);
+		exceptionRule.expect(IllegalArgumentException.class);
+	}
+	
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void turnLeftExceptionTesting() {
+		
+		
+	}
+	
+}

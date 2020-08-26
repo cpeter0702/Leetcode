@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n    <expression enabled\="true" text\="inputCommendsData.get(i)"/>\n    <expression enabled\="true" text\="inputCommends"/>\n    <expression enabled\="true" text\="rover"/>\n    <expression enabled\="true" text\="basePt"/>\n    <expression enabled\="true" text\="startPt"/>\n</watchExpressions>\n

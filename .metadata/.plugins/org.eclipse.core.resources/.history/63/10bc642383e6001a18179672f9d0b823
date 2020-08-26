@@ -1,0 +1,25 @@
+package Phoebe;
+
+import java.util.List;
+
+public class MarsRovers {
+
+	private final char N = 'N'; // North
+	private final char W = 'W'; // West
+	private final char E = 'E'; // East
+	private final char S = 'S'; // South
+
+	public void printAnswer (List<Rovers> ansList) {
+		for(Rovers rover : ansList ) {
+			System.out.println(rover.getX() + " " + rover.getY() + " " + rover.getDirection());
+		}
+	}
+	
+	public List<String> doMarsExploring (List<String> inputCommendsData) {
+		
+		
+		
+		return null;
+	}
+
+}

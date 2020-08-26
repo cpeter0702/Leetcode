@@ -1,0 +1,11 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+public class MarsRoversTest {
+	
+	@Test
+	public void printAnswer() {
+		Assert.assertNotNull(null);;
+	}
+	
+}

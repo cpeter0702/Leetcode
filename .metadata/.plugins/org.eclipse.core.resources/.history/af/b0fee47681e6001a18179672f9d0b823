@@ -1,0 +1,16 @@
+package Phoebe;
+
+public class MarsRovers {
+
+	private final char N = 'N';		// North
+	private final char W = 'W'; 	// West
+	private final char E = 'E'; 	// East
+	private final char S = 'S'; 	// South
+	
+	private int x = 0;
+	private int y = 0;
+	private char direction = N;
+	
+	
+	
+}

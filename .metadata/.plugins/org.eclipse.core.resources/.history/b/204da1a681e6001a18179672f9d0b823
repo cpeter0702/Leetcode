@@ -1,0 +1,28 @@
+package Phoebe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MarsRovers {
+
+	private final char N = 'N'; // North
+	private final char W = 'W'; // West
+	private final char E = 'E'; // East
+	private final char S = 'S'; // South
+
+	private int x = 0;
+	private int y = 0;
+	private char direction = N;
+
+	private List<String> inputData() {
+		List<String> inputData = new ArrayList<String>();
+		inputData.add("5 5");
+		inputData.add("1 2 N");
+		inputData.add("LMLMLMLMM");
+		inputData.add("3 3 E");
+		inputData.add("MMRMMRMRRM");
+		
+		return inputData;
+	}
+
+}
